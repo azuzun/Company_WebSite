@@ -1,0 +1,350 @@
+/* ========================= RESET */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ========================= GLOBAL STYLES */
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #17324d;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+/* ========================= LAYOUT */
+
+.containerClass {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+}
+
+.sectionClass {
+    padding: 80px 0;
+}
+
+.soft-sectionClass {
+    background: #f5fbff;
+}
+
+/* ========================= HEADER */
+
+.headerClass {
+    background: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top:0;              
+    z-index:1000;     
+}
+
+.header-innerClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-linkClass {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logoClass {
+    width: 150px;
+    height: auto;
+}
+
+.menuClass {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menuClass a:hover {
+    color: #65b5e5;
+    transition:.25s;
+}
+
+.menu-buttonClass,
+.buttonClass {
+    display: inline-block;
+    background: #65b5e5;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 22px;
+    border-radius: 6px;
+    transition:.25s;
+}
+
+.menu-buttonClass:hover,
+.buttonClass:hover {
+    background: #17324d;
+    color: #ffffff;
+}
+
+/* ========================= HERO */
+
+.heroClass {
+    padding: 90px 0;
+    background:
+        linear-gradient(120deg, rgba(232, 246, 255, 0.95), rgba(255, 255, 255, 0.95)),
+        url("../images/backgrounds/services-bg-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-gridClass {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-logoClass {
+    width: 20vw;
+    min-width: 160px;
+    max-width: 320px;
+    margin-bottom: 20px;
+}
+
+.small-titleClass {
+    margin: 0 0 12px;
+    color: #65b5e5;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.hero-textClass {
+    max-width: 650px;
+    margin-bottom: 28px;
+    font-size: 20px;
+}
+
+.hero-buttonsClass {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.light-buttonClass {
+    background: #ffffff;
+    color: #17324d;
+    border: 1px solid #d5e8f4;
+}
+
+.hero-cardClass {
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 16px 40px rgba(23, 50, 77, 0.12);
+}
+
+.service-listClass {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.service-listClass span {
+    padding: 8px 12px;
+    background: #e8f6ff;
+    color: #17324d;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+/* ========================= IMAGE SECTION */
+
+.image-sectionClass {
+    padding: 60px 0 0;
+    background: #ffffff;
+}
+
+.section-imageClass {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* ========================= ABOUT */
+
+.two-columnClass {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 50px;
+}
+
+.check-listClass {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* ========================= SERVICES */
+
+.cardsClass {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cardClass,
+.contact-cardClass {
+    padding: 26px;
+    background: #ffffff;
+    border: 1px solid #e1edf5;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.cardClass {
+    min-height: 190px;
+}
+
+/* ========================= WHY US */
+
+.reason-gridClass {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.reason-gridClass strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #102a43;
+    font-size: 19px;
+}
+
+/* ========================= QUOTE */
+
+.quote-sectionClass {
+    background: #17324d;
+    color: #ffffff;
+}
+
+.quote-sectionClass h2,
+.quote-sectionClass .small-titleClass {
+    color: #ffffff;
+}
+
+.quote-boxClass {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 30px;
+    align-items: center;
+}
+
+.quote-sectionClass .contact-cardClass {
+    background: #ffffff;
+    color: #17324d;
+}
+
+/* ========================= CONTACT */
+
+.contact-gridClass {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-cardClass a {
+    display: block;
+    margin-top: 8px;
+    color: #1d79b8;
+    font-weight: 700;
+}
+
+.noteClass {
+    color: #6d7f90;
+    font-size: 14px;
+}
+
+/* ========================= FOOTER */
+.footerClass {
+    padding: 24px 0;
+    background: #102a43;
+    color: #ffffff;
+}
+
+.footer-innerClass {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footerClass p {
+    margin: 0;
+}
+
+/* for mobile devices */
+@media (max-width: 800px) {
+    .header-innerClass,
+    .menuClass,
+    .footer-innerClass {
+        flex-direction: column;
+    }
+
+    .header-innerClass {
+        padding: 18px 0;
+    }
+
+    .menuClass {
+        gap: 12px;
+        text-align: center;
+    }
+
+    .heroClass {
+        padding: 60px 0;
+    }
+
+    .hero-gridClass,
+    .two-columnClass,
+    .cardsClass,
+    .reason-gridClass,
+    .quote-boxClass,
+    .contact-gridClass {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
